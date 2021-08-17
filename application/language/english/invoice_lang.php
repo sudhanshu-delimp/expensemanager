@@ -1,0 +1,37 @@
+<?php
+$lang['custom_fields'] = 'Custom Fields';
+$lang['invoice'] = 'Invoice';
+$lang['create_invoice'] = 'Create Invoice';
+$lang['invoice_no'] = 'Invoice No.';
+$lang['client_name'] = 'Client Name';
+$lang['description'] = 'Description';
+$lang['added_by'] = 'Added By';
+$lang['invoice date'] = 'Invoice Date';
+$lang['action'] = 'Action';
+$lang['edit'] = 'Edit';
+$lang['delete'] = 'Delete';
+$lang['action'] = 'Action';
+$lang['search'] = 'Search';
+$lang['success'] = 'Success';
+$lang['warning'] = 'Warning';
+$lang['records_deleted_successfully'] = 'Records deleted successfully';
+$lang['your_action_has_been_completed_successfully'] = 'Your action has been completed successfully';
+$lang['save'] = 'Save';
+$lang['status'] = 'Status';
+$lang['active'] = 'Active';
+$lang['inactive'] = 'Inactive';
+$lang['address'] = 'Address';
+$lang['client'] = 'client';
+$lang['amount'] = 'Amount';
+$lang['due_amount'] = 'Due Amount';
+$lang['payment_type'] = 'Payment Type';
+$lang['select'] = 'Select';
+$lang['flat'] = 'Flat';
+$lang['installment'] = 'Installment';
+$lang['payment_history'] = 'Payment History';
+$lang['add_payment'] = 'Add Payment';
+$lang['payment_note'] = 'Payment Note';
+$lang['project_description'] = 'Project Description';
+$lang['payment_date'] = 'Payment Date';
+$lang['total_amount'] = 'Total Amount';
+/*mka_custom_variables*/

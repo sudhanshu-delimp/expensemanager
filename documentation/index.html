@@ -1,0 +1,394 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>Codeigniter - Expense Management </title>
+
+        <meta name="description" content="Thank you for purchasing this application. In the rest of this documentation we'll describe the basics of the application.">
+        <meta name="author" content="Web Project Builder">
+        <meta name="copyright" content="Web Project Builder">
+        <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+        <meta name="date" content="2016-05-07T00:00:00+01:00">
+
+        <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+
+        <link rel="stylesheet" href="assets/css/custom.css" media="screen">
+
+        <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+
+        <script src="assets/js/jquery.js"></script>
+
+        <script src="assets/js/jquery.scrollTo.js"></script>
+        <script src="assets/js/jquery.easing.js"></script>
+
+        <script>document.createElement('section');var duration = '586', easing = 'easeOutExpo';</script>
+        <script src="assets/js/script.js"></script>
+
+        <style>
+            html{background-color:#EEEEEE;color:#383838;}
+            ::-moz-selection{background:#333636;color:#00DFFC;}
+            ::selection{background:#333636;color:#00DFFC;}
+            #documenter_sidebar #documenter_logo{background-image:url(assets/images/image_1.png);}
+            a{color:#008C9E;}
+            .btn {
+                border-radius:3px;
+            }
+            .btn-primary {
+                background-image: -moz-linear-gradient(top, #008C9E, #006673);
+                background-image: -ms-linear-gradient(top, #008C9E, #006673);
+                background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+                background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+                background-image: -o-linear-gradient(top, #008C9E, #006673);
+                background-image: linear-gradient(top, #008C9E, #006673);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+                border-color: #006673 #006673 #bfbfbf;
+                color:#FFFFFF;
+            }
+            .btn-primary:hover,
+            .btn-primary:active,
+            .btn-primary.active,
+            .btn-primary.disabled,
+            .btn-primary[disabled] {
+                border-color: #008C9E #008C9E #bfbfbf;
+                background-color: #006673;
+            }
+            hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+            #documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;http://static.revaxarts-themes.com/noise.gif}
+                                                              #documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+                                                          #documenter_sidebar ul{border-top:1px solid #212424;}
+                                                          #documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+                                                          #documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+                                                          #documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+                                                          #documenter_copyright{display:block !important;visibility:visible !important;}
+            </style>
+
+        </head>
+        <body class="documenter-project-rise-ultimate-project-manager">
+            <div id="documenter_sidebar">
+                <ul id="documenter_nav">
+                    <li><a class="current" href="#documenter_cover">Indroduction</a></li>
+                    <li><a href="#quick_start_guide" title="Quick Start Guide">Quick Start Guide</a></li>
+                    <li><a href="#features" title="Features">Features</a></li>
+                    <li><a href="#installation" title="Installation">Installation</a></li>
+                    <li><a href="#dashboard" title="dashboard">Dashboard</a></li>
+                    <li><a href="#myaccount" title="myaccount">My Account</a></li>
+					<li><a href="#expenses" title="expenses">Expenses</a></li>
+					<li><a href="#income" title="income">Income</a></li>
+					<li><a href="#expenscategory" title="expense category">Expense Category</a></li>
+					<li><a href="#incomecategory" title="income category">Income Category</a></li>
+                    <li><a href="#users" title="Users">Users</a></li>
+                    <li><a href="#settings" title="settings">Settings</a></li>
+                    <li><a href="#application_structure" title="Application Structure">Application Structure</a></li>
+                    <li><a href="#thanks" title="Thanks">Thanks</a></li>
+
+                </ul>
+                <div id="documenter_copyright">Copyright Web Project Builder 2017<br>
+                    made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+                </div>
+            </div>
+            <div id="documenter_content">
+                <section id="documenter_cover">
+                    <h1>Codeigniter - Expense Management </h1>
+                    <div id="documenter_buttons">
+                        <a href="https://www.webprojectbuilder.com/item/Expense-Management/live-demo/1">Live Demo</a> 
+                    </div>
+                    <hr>
+                    <ul>
+                        <li>Created: 05/07/2017</li>
+                        <li>By: Web Project Builder</li>
+
+                        <li>Email: <a href="mailto:info@webprojectbuilder.com">info@webprojectbuilder.com</a></li>
+                    </ul>
+                    <p>It provides the ability to group your income/expenses into categories and lets you set a budget and track expenses in the category.</p>
+                </section>
+
+                <section id="quick_start_guide">
+                    <div class="page-header"><h3>Quick Start Guide</h3><hr class="notop"></div>
+                    <div>
+                        &nbsp;</div>
+                    <div>
+                        
+                        A simple but powerful PHP script to manage your expenses with multi-user level and permission. Our expense management system designed to help individual or business budget, track and possibly control your expenses. It supports tracking of both your expenses and income. This expense management system provides an integrated set of features to help you to manage your expenses and cash flow. It provides the ability to group your income/expenses into categories and lets you set a budget and track expenses in the category.
+
+                    <div>
+                        &nbsp;</div>
+                </section>
+
+                <section id="features">
+                    <div class="page-header"><h3>Features</h3><hr class="notop"></div>
+
+                    <ul>
+                        <li>
+                            Manage Expense</li>
+                        <li>
+                            Manage Income</li>
+                        <li>
+                            Manage Expense Category</li>
+                        <li>
+                            Manage Income Category</li>
+                        <li>
+                            Filter by date range</li>
+                       <li>Sorting & Pagination</li>
+                        <li>Support Multi-user level to Manage the system</li>
+                        <li>User Login & Management Included</li>
+                        <li>Set different permission for different user type</li>
+                        <li>Custom CRUD can be added</li>
+                        <li>Easy to customize</li>
+                    </ul>
+                    <p>
+                        &nbsp;</p>
+                </section>
+                <section id="installation">
+                    <div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+                    <h5>
+                        Server Requirements</h5>
+                    <ul style="margin: 18px 0px; padding-right: 0px; padding-left: 0px; border: 0px; outline: 0px; font-size: 13px; font-family: 'Open Sans', Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+                        <li>
+                            Apache with PHP and MySQL server</li>
+                        <li>
+                            PHP v5.5+</li>
+                        <li>MySqli</li>
+                        <li>GD Extension</li>
+                        <li>CURL Enabled</li>
+                        <li>Openssl Enabled</li>
+                    </ul>
+                    <h5>
+                        Quick Installation Guide</h5>
+                    <ul style="padding-right: 0px; padding-left: 0px; margin: 18px 0px; border: 0px; outline: 0px; font-size: 13px; font-family: 'Open Sans', Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            <span style="font-weight: inherit;">Unzip the </span><b>expense_management.zip&nbsp;</b><span style="font-weight: inherit;">which you have downloaded from the Envato Market.</span></li>
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            Upload the files to your sever using any FTP client.</li>
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            The file structure should be look like this:
+                            <ul>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    /application</li>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    /assets</li>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    /documentation</li>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    /files</li>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    /install</li>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    /system</li>
+
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    /index.php</li>
+                            </ul>
+                        </li>
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            Create a <strong>MySql</strong> Database via your web hosting providers Control Panel (e.g.&nbsp;<span style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; vertical-align: baseline;">cPanel</span>). Once you have created the database, remember the following information:
+                            <ul>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    Database Name</li>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    Database Username</li>
+                                <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                                    Database Password</li>
+                            </ul>
+                        </li>
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            Open your web browser and enter the url (<strong>http://yourdomain.com </strong>or&nbsp;<strong>http://yourdomain.com/foldername</strong>) in the address bar.</li>
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            If everything is ok, you should get the installation page.</li>
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            Follow the instructions and click on the&nbsp;<strong>Next </strong>button. Then enter the database details which you have collected earlier. Finally, enter your name, email and password which will be required to login in the application. Then click on the&nbsp;<strong>Finish </strong>button and wait a while. The system will create necessary tables in database, files and configuration.</li>
+                        <li style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                            That&#39;s all! After completing the installation delete the installation folder and login to your dashboard.</li>
+                    </ul>
+                    <p style="margin: 0px 0px 0px 36px; padding: 4px 0px; border: 0px; outline: 0px; font-weight: inherit; font-style: inherit; font-family: inherit; vertical-align: baseline; list-style: square;">
+                        &nbsp;</p>
+                </section>
+                <section id="dashboard">
+                    <div class="page-header"><h3>Dashboard</h3><hr class="notop"></div>
+                    <p>
+                        You can see analytical data on your dashboard&nbsp;</p>
+                    <p>
+                        <img alt="dashboard" src="assets/images/dashboard.png" width="1010"></p>
+                    <h5>
+                        User's Analytics</h5>
+                    <ol>
+                        <li>
+                            Total Users: Number of users registered on the site.</li>
+                        <li>
+                            Today Registered: Number of users registered on current date.</li>
+                        <li>
+                            Active Users: Number of users who's account status is "Active" on the site.</li>
+                       
+                    </ol>
+                    <h5>
+                        Last Registrations</h5>
+                    <ol>
+                        <li>
+                            List of user's who are registered recently. It will show list of upto 10 users max.</li>
+                        <li>
+                            &nbsp;You can define different currency for different clients. It&#39;s useful when you are working with a foreign client which currency symbol is different from your default currency symbol. By default the invoices of the client will be generated using the default currency symbol if you don&#39;t define any currency symbol with that specific client.</li>
+                    </ol>
+                    <h5>
+                        Monthly Registrations</h5>
+                    
+                    <ol>
+                        <li>
+                            Shows bar graph on monthly basis, with number of registered users for each month. Each Bar represent the number of user registered in particular month </li>
+                    </ol>
+                </section>
+                <section id="myaccount">
+                    <div class="page-header"><h3>My Account</h3><hr class="notop"></div>
+                    <p>
+                        You can manage your profile here.</p>
+                    <p>
+                        <img alt="projects-list" src="assets/images/myaccount.png" width="1010"></p>
+                    <h5>
+                        My Account</h5>
+                    <ol>
+                        <li>
+                            You can add/update your profile information here</li>
+                        <li>
+                           You can update the password, email, name, your profile picture etc.</li>
+                      
+                    </ol>
+                </section>
+				<section id="expenses">
+                    <div class="page-header"><h3>Expenses</h3><hr class="notop"></div>
+                    <p>
+                        You can manage your expenses here.</p>
+                    <p>
+                        <img alt="projects-list" src="assets/images/expenses.png" width="1010"></p>
+                    <h5>Expenses</h5>
+                    <ol>
+                        <li>
+                            You can add/update/delete your expenses here</li>
+                        <li>
+                           You can filter your expenses based on the selected date range.</li>
+                      <li>
+                            You can export the copy of your expenses</li>
+                    </ol>
+                </section>
+				<section id="income">
+                    <div class="page-header"><h3>Income</h3><hr class="notop"></div>
+                    <p>
+                        You can manage your income here.</p>
+                    <p>
+                        <img alt="projects-list" src="assets/images/income.png" width="1010"></p>
+                    <h5>Income</h5>
+                    <ol>
+                        <li>
+                            You can add/update/delete your income here</li>
+                        <li>
+                           You can filter your income based on the selected date range.</li>
+						   <li>
+                            You can export the copy of your income</li>
+                    </ol>
+                </section>
+				<section id="expensecategory">
+                    <div class="page-header"><h3>Expense Category</h3><hr class="notop"></div>
+                    <p>
+                        You can manage your expense category here.</p>
+                    <p>
+                        <img alt="projects-list" src="assets/images/expensecategory.png" width="1010"></p>
+                    <h5>Expense Category</h5>
+                    <ol>
+                        <li>
+                            You can add/update/delete your expense category here</li>
+						   <li>
+                            You can export a PDF of your expense category</li>
+                    </ol>
+                </section>
+				<section id="incomecategory">
+                    <div class="page-header"><h3>Income Category</h3><hr class="notop"></div>
+                    <p>
+                        You can manage your expense category here.</p>
+                    <p>
+                        <img alt="projects-list" src="assets/images/incomecategory.png" width="1010"></p>
+                    <h5>Income Category </h5>
+                    <ol>
+                        <li>
+                            You can add/update/delete your income category here</li>
+						   <li>
+                            You can export a PDF of your income category</li>
+                    </ol>
+                </section>
+                <section id="users">
+                    <div class="page-header"><h3>Users</h3><hr class="notop"></div>
+                    <p>
+                        You can manage site users here.</p>
+                    <p>
+                        <img alt="projects-list" src="assets/images/users.png" width="1050"></p>
+                    <h5>
+                        Manage users</h5>
+                    <ol>
+                        <li>You can see list of users</li>
+                        <li>You can search users</li>
+                        <li>You can Add user</li>
+                        <li>You can Invite user</li>
+                        <li>You can Edit user</li>
+                        <li>You can Delete user</li>
+                    </ol>
+                </section>
+
+
+                <section id="settings">
+                    <div class="page-header"><h3>Settings</h3><hr class="notop"></div>
+                    <p>
+                        You can manage your site basic settings from here</p>
+                    <p>
+                        <img alt="invoices" src="assets/images/settings.png" width="1010"></p>
+                    <h5>
+                        Settings</h5>
+                    <ol>
+                        <li>Manage Title, Logo, Favicon, Allow Registration and User Type</li>
+                        <li>Manage Email settings to use SMTP or php mail funciton</li>
+                        <li>Manage Permission: Set permission as per user type to access different sections of the site or records</li>
+						<li>You can add custom fields in existing modules through settings</li>
+                       <strong>Email templates</strong>: The application has some default email templates which are using to send different emails. You can change the appearance of the email templates as you like.</li>
+                    
+                </section>
+               
+                <section id="application_structure">
+                    <div class="page-header"><h3>Application Structure</h3><hr class="notop"></div>
+                    <p>
+                        <img alt="folder-structure" src="assets/images/folder_structure.png"></p>
+                    <ol>
+                        <li>
+                            The config folder&nbsp;contains all configuration related files.</li>
+                        <li>
+                            The controllers folder contains all business logic of the application.</li>
+                        <li>
+                            Views folder contains all the view related files.</li>
+                        <li>
+                            Assets folder contains all css, js and images of the application.</li>
+                        <li>
+                            Don&#39;t change anything in system folder. It&#39;s contains the core functions of the application.</li>
+                    </ol>
+                    <p>
+                        To learn more about the application you can learn the <strong>codeigniter&nbsp;</strong>framework.</p>
+                    <p>
+                        &nbsp;</p>
+                </section>
+              
+              
+                <section id="thanks">
+                    <div class="page-header"><h3>Thanks</h3><hr class="notop"></div>
+                    <p>
+                        Thanks for the purchase of this application. Hopefully you'll enjoy using the app. If you have any query or suggestion, please send an email to <a href="mailto:support@Web Project Builder.com" target="_top">support@Web Project Builder.com</a></p>
+                    <p>
+                        Best wishes<br>
+                        Web Project Builder Team</p>
+                    <p>
+                        <a href="https://codecanyon.net/user/ibrinfotech7">https://codecanyon.net/user/ibrinfotech7</a></p>
+
+                        <a href="https://www.webprojectbuilder.com?ref=script-documentation">https://www.webprojectbuilder.com</a></p>
+
+                </section>
+
+            </div>
+        </body>
+    </html>

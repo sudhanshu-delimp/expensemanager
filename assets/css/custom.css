@@ -1,0 +1,273 @@
+.lagAm .btn-group.bootstrap-select {
+    margin-top: 8%;
+}
+
+.mka-das-table {
+    min-height: 328px;
+}
+
+.pic_size img{
+  max-width: 100%;
+}
+
+.clear-both{
+  clear: both;
+}
+
+.dataTables_length{float:left;}
+.dataTables_filter input[type="search"] {
+    padding: 4px 12px;
+    font-weight: normal;
+    background: url(../images/search.png) no-repeat 96% 45%;
+    width: 200px;
+    height: 35px;
+    transition: all 0.5s;
+}
+
+.box-body .dt-buttons, .dataTables_filter{
+  float: right;
+}
+
+.pic_size img {
+    max-width: 100%;
+}
+
+.rolesPermissionTable input[type="checkbox"] {
+	opacity: 1;
+	position: static;
+}
+
+.help-variables-div{
+    background-color: #f9f7f6;
+    border: 1px solid #eeeeee;
+    padding: 8px 0px 10px 10px;
+    max-height: 200px;
+    overflow: auto;
+  }
+.my-editor-contant {
+    max-height: 200px;
+    overflow: auto;
+    padding: 7px 0px 0px 7px;
+    background-color: #edeef2;
+}
+.sub-btn-wdt {
+    padding-bottom: 20px;
+}
+
+.info-box .icon span.glyphicon {
+    padding: 21px;
+    font-size: 35px;
+}
+
+.mka-check {
+    position: relative;
+    left: 21px;
+}
+
+p.line span {
+    height: 0px;
+}
+
+.menu li i.glyphicon {
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+.daterangepicker .calendar.right{
+    float: left!important;
+}
+
+/* a.navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+img#logo {
+    width: 100%;
+    max-height: 100%;
+} */
+
+a.navbar-brand{
+    max-width: 252px;
+}
+
+.text-red{
+    color: #f44336;
+}
+button.btn-primary i.material-icons {
+    color: white !important;
+    font-size: 15px !important;
+    margin-right: 5px;
+}
+ul{
+    list-style: none !important;
+}
+a.btn-primary i.material-icons {
+    color: white !important;
+    font-size: 15px !important;
+    margin-right: 5px;
+}
+.percentagecl{
+       position: absolute;
+    top: 9px;
+    right: 15px;
+}
+.invice .card .body .col-md-12,.invice .card .body .col-md-10 {
+    margin-bottom: 0;
+}
+
+span.mka-loading {
+    position: relative;
+    left: 2%;
+}
+
+span.mka-loading img {
+    height: 28px;
+}
+
+.heedingInformStyle {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+div.dataTables_wrapper div.dataTables_length .bootstrap-select {
+    width: 75px;
+    display: inline-block;
+}
+
+
+/*============================================================
+=            Css for change color as teme            =
+============================================================*/
+
+.theme-grey .btn-primary{
+    background-color: #9e9e9e !important;
+}
+
+.theme-blue .btn-primary{
+    background-color: #039ae4 !important;
+}
+
+.theme-red .btn-primary{
+    background-color: #f44336 !important;
+}
+
+.theme-pink .btn-primary{
+    background-color: #e91e63 !important;
+}
+
+.theme-purple .btn-primary{
+    background-color: #9c27b0 !important;
+}
+
+.theme-deep-purple .btn-primary{
+    background-color: #673ab7 !important;
+}
+
+.theme-indigo .btn-primary{
+    background-color: #3f51b5 !important;
+}
+
+.theme-light-blue .btn-primary{
+    background-color: #03a9f4 !important;
+}
+
+.theme-cyan .btn-primary{
+    background-color: #00bcd4 !important;
+}
+
+.theme-teal .btn-primary{
+    background-color: #009688 !important;
+}
+
+.theme-green .btn-primary{
+    background-color: #4caf50 !important;
+}
+
+.theme-light-green .btn-primary{
+    background-color: #8bc34a !important;
+}
+
+.theme-lime .btn-primary{
+    background-color: #cddc39 !important;
+}
+
+.theme-yellow .btn-primary{
+    background-color: #ffeb3b !important;
+}
+
+.theme-amber .btn-primary{
+    background-color: #ffc107 !important;
+}
+
+.theme-orange .btn-primary{
+    background-color: #ff9800 !important;
+}
+
+.theme-deep-orange .btn-primary{
+    background-color: #ff5722 !important;
+}
+
+.theme-brown .btn-primary{
+    background-color: #795548 !important;
+}
+
+.theme-grey .btn-primary{
+    background-color: #9e9e9e !important;
+}
+
+.theme-blue-grey .btn-primary{
+    background-color: #607d8b !important;
+}
+
+.theme-black .btn-primary{
+    background-color: #000000 !important;
+}
+
+/*=====  End of Css for change color as teme  ======*/
+
+.box-footer {
+    padding: 20px;
+    position: relative;
+    background: #eeeeee;
+}
+
+.modal .modal-footer {
+    background-color: #eee;
+}
+
+.modal .modal-header {
+    padding: 10px 13px 7px 20px;
+    background-color: #eee;
+}
+
+.modal-header .close {
+    margin-top: 6px;
+}
+
+.modal-body .box-body {
+    min-height: 200px;
+}
+
+.showdropdownname ul {
+    background-color: #eee;
+    padding: 11px 150px 8px 12px;
+    position: absolute;
+    z-index: 999;
+    box-shadow: 5px 4px 5px 0px #a09a9a;
+}
+
+.showdropdownname ul li {
+    background-color: #eee;
+ 
+}
+
+.showdropdownname ul li {
+    width: 289%;
+    padding: 6px 0px 6px 0px;
+}
+.showdropdownname ul li:hover {
+    background-color: #ddd;
+}

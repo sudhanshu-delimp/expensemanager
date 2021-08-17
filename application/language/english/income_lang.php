@@ -1,0 +1,26 @@
+<?php
+$lang['select_date_range'] = 'Select date range';
+$lang['select_date'] = 'Select date';
+$lang['edit'] = 'Edit';
+$lang['delete'] = 'Delete';
+$lang['action'] = 'Action';
+$lang['search'] = 'Search';
+$lang['success'] = 'Success';
+$lang['warning'] = 'Warning';
+$lang['records_deleted_successfully'] = 'Records deleted successfully';
+$lang['your_action_has_been_completed_successfully'] = 'Your action has been completed successfully';
+$lang['save'] = 'Save';
+$lang['all'] = 'All';
+$lang['income'] = 'Income';
+$lang['add_income'] = 'Add Income';
+$lang['date'] = 'Date';
+$lang['description'] = 'Description';
+$lang['amount'] = 'Amount';
+$lang['category'] = 'Category';
+$lang['client'] = 'Client';
+$lang['added_by'] = 'Added By';
+$lang['inr_amount'] = 'INR Amount';
+$lang['amount'] = 'Amount';
+$lang['send_date'] = 'Send Date';
+$lang['receive_date'] = 'Receive Date';
+$lang['currency_type'] = 'Currency Type';
